@@ -23,6 +23,8 @@ public class Puntuacio {
         return temps;
     }
 
+    public String[] getParaules1() {return  paraules1;}
+
     public String getParaulaSecretaDificultat(int dificultat){
         paraula = "err";
         this.dificultat = dificultat;
@@ -86,7 +88,7 @@ public class Puntuacio {
         return puntuacio;
     }
 
-    private boolean stringContainsItemFromList(String inputStr, String[] items) {
+    public boolean stringContainsItemFromList(String inputStr, String[] items) {
         return Arrays.stream(items).anyMatch(inputStr::contains);
     }
 

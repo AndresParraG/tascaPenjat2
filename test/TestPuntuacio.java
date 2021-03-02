@@ -37,4 +37,9 @@ class TestPuntuacio {
     void iniciarPartidaDificultatErrada() {
         assertEquals("err", puntuacio.getParaulaSecretaDificultat(0));
     }
+
+    @Test
+    void inciarPartidaParaulaDificultat1() {
+        assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(1), puntuacio.getParaules1()));
+    }
 }
