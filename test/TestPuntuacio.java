@@ -10,5 +10,10 @@ class TestPuntuacio {
 
     private Puntuacio puntuacio;
 
-    
+    @Test
+    void iniciarPartidaDificultat1() {
+        puntuacio = new Puntuacio();
+        puntuacio.getParaulaSecretaDificultat(1);
+        assertEquals(5, puntuacio.getIntents());
+    }
 }
