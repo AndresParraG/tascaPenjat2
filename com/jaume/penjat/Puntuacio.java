@@ -25,6 +25,8 @@ public class Puntuacio {
 
     public String[] getParaules1() {return  paraules1;}
 
+    public String[] getParaules2() {return paraules2;}
+
     public String[] getParaules3() {return paraules3;}
 
     public String getParaulaSecretaDificultat(int dificultat){
