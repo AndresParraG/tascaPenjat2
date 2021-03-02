@@ -42,4 +42,9 @@ class TestPuntuacio {
     void inciarPartidaParaulaDificultat1() {
         assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(1), puntuacio.getParaules1()));
     }
+
+    @Test
+    void inciarPartidaParaulaDificultat2() {
+        assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(2), puntuacio.getParaules1()));
+    }
 }
