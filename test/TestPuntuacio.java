@@ -9,4 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class TestPuntuacio {
 
     private Puntuacio puntuacio;
+
+    
 }
