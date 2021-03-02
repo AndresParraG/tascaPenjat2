@@ -50,6 +50,6 @@ class TestPuntuacio {
 
     @Test
     void inciarPartidaParaulaDificultat3() {
-        assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(3), puntuacio.getParaules1()));
+        assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(3), puntuacio.getParaules3()));
     }
 }
