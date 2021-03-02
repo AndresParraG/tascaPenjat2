@@ -30,4 +30,10 @@ class TestPuntuacio {
         puntuacio.getParaulaSecretaDificultat(3);
         assertEquals(3, puntuacio.getIntents());
     }
+
+    @Test
+    void iniciarPartidaDificultatErrada() {
+        puntuacio = new Puntuacio();
+        assertEquals("err", puntuacio.getParaulaSecretaDificultat(0));
+    }
 }
