@@ -104,7 +104,7 @@ class TestPuntuacio {
     }
 
     @Test
-    void calcularPuntuacioParaulaErradaDificultat1() {
+    void calcularPuntuacioParaulaErradaDificultat3() {
         puntuacio.setParaula("escombraries");
         puntuacio.setIntents(3);
         puntuacio.setDificultat(3);
