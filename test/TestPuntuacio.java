@@ -92,4 +92,14 @@ class TestPuntuacio {
         float value = puntuacio.calcularPuntuacio(par, puntuacio.getIntents());
         assertEquals(40, value);
     }
+
+    @Test
+    void calcularPuntuacioParaulaErradaDificultat2() {
+        puntuacio.setParaula("periquito");
+        puntuacio.setIntents(4);
+        puntuacio.setDificultat(2);
+        String par[] = {"p", null, "r", "i", null, "u","i", null, "o"};
+        float value = puntuacio.calcularPuntuacio(par, puntuacio.getIntents());
+        assertEquals(120, value);
+    }
 }
