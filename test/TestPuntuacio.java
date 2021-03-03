@@ -62,4 +62,14 @@ class TestPuntuacio {
         float value = puntuacio.calcularPuntuacio(par, puntuacio.getIntents());
         assertEquals(110, value);   //no es te en compte la puntuacio per temps
     }
+
+    @Test
+    void calcularPuntuacioParaulaEncertadaDificultat2() {
+        puntuacio.setParaula("periquito");
+        puntuacio.setIntents(4);
+        puntuacio.setDificultat(2);
+        String par[] = {"p","e","r","i","q","u","i","t","o"};
+        float value = puntuacio.calcularPuntuacio(par, puntuacio.getIntents());
+        assertEquals(210, value);   //no es te en compte la puntuacio per temps
+    }
 }
