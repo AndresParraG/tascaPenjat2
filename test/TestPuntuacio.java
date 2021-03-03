@@ -52,4 +52,14 @@ class TestPuntuacio {
     void inciarPartidaParaulaDificultat3() {
         assertTrue(puntuacio.stringContainsItemFromList(puntuacio.getParaulaSecretaDificultat(3), puntuacio.getParaules3()));
     }
+
+    @Test
+    void calcularPuntuacioParaulaEncertadaDificultat1() {
+        puntuacio.setParaula("cargol");
+        puntuacio.setIntents(5);
+        puntuacio.setDificultat(1);
+        String par[] = {"c","a","r","g","o","l"};
+        float value = puntuacio.calcularPuntuacio(par, puntuacio.getIntents());
+        assertEquals(110, value);   //no es te en compte la puntuacio per temps
+    }
 }
