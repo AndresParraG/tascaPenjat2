@@ -15,6 +15,12 @@ public class Puntuacio {
     private final String[] paraules3 = {"escombraries","escopinyes","engronxador","desnonament","malhauradament","malbaratament",};
     private final String[] letresBonus = {"x", "h", "y"};
 
+    public void setDificultat(int dificultat) {this.dificultat = dificultat;}
+
+    public void setParaula(String paraula) {this.paraula = paraula;}
+
+    public void setIntents(int intents) {this.intents = intents;}
+
     public int getIntents() {
         return intents;
     }
